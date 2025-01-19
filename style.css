@@ -41,15 +41,16 @@
 .display-grid {
   display: grid;
 }
+
 /* shear button style */
 .button-primary {
   border-radius: 0.8rem;
   padding: 2rem 2.5rem;
   border: none;
-  margin-bottom: 5rem;
+  font-size: 2rem;
 }
-/* header style */
 
+/* header style */
 /* navbar style */
 .navbar {
   margin: 0 auto;
@@ -71,6 +72,8 @@
   font-size: 1.8rem;
   font-weight: 500;
 }
+
+/* Hero style */
 .hero {
   max-width: 1440px;
   margin: 0 auto;
@@ -81,14 +84,61 @@
   font-weight: 700;
 }
 .hero-desc > p {
-  font-size: 1rem;
+  font-size: 1.6rem;
   padding: 3.2rem;
   max-width: 868px;
   margin: 0 auto;
 }
 .hero img {
   width: 100%;
-  margin-bottom: 4.5rem;
+  margin: 5rem 0 4.5rem;
+}
+
+/* style explore */
+.explore {
+  justify-content: center;
+  gap: 73px;
+  margin: 85px 0;
+}
+
+.all-image {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.all-image > div {
+  width: 100%;
+}
+.all-image img {
+  width: 100%;
+}
+
+/* explore desc style */
+.explore .desc {
+  margin: auto 0;
+  max-width: 537px;
+}
+.explore .desc h4 {
+  font-size: 4.5rem;
+}
+.title-part1 {
+  font-weight: 400;
+}
+.title-part3 {
+  color: rgba(255, 144, 14, 1);
+}
+
+.explore .desc p {
+  font-size: 1.6rem;
+  padding: 25px 0;
+}
+
+/* Media style */
+@media (min-width: 576px) and (max-width: 992px) {
+  .explore {
+    flex-direction: column;
+    padding: 0 25px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -101,5 +151,9 @@
   }
   .navbar > ul {
     text-align: center;
+  }
+  .explore {
+    flex-direction: column;
+    padding: 0 25px;
   }
 }
