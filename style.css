@@ -193,10 +193,94 @@
   font-weight: 500;
 }
 
+/* style some facts */
+.some-facts {
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  padding: 0 20px;
+}
+.some-facts-desc {
+  max-width: 542px;
+  margin-bottom: 100px;
+}
+.some-facts-desc h4 {
+  font-weight: 700;
+  font-size: 4.5rem;
+  color: rgba(19, 19, 19, 1);
+  padding-bottom: 24px;
+}
+.some-facts-desc p {
+  font-size: 1.6rem;
+  color: rgba(114, 114, 114, 1);
+}
+
+.some-facts-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+}
+.some-facts-card div {
+  width: 242px;
+  height: 242px;
+  border: 1px solid rgba(255, 144, 14, 1);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+}
+.some-facts-card h6 {
+  font-size: 4.5rem;
+  font-weight: 600;
+  color: rgba(66, 66, 66, 1);
+  padding: 10px 0 5px;
+}
+.some-facts-card p {
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgba(114, 114, 114, 1);
+}
+
+/* style sponsors */
+.sponsor {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+  margin-bottom: 100px;
+}
+.sponsor-desc {
+  text-align: center;
+  max-width: 542px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+.sponsor-desc h4 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  padding-bottom: 24px;
+}
+.sponsor-desc p {
+  font-size: 1.6rem;
+  color: rgba(114, 114, 114, 1);
+}
+.company {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.company img {
+  width: 166px;
+  filter: grayscale(100%);
+}
+
 /* Media style */
 @media (min-width: 576px) and (max-width: 992px) {
   .explore {
-    flex-direction: column;
+    flex-direction: column-reverse;
     padding: 0 25px;
   }
   .features {
@@ -206,6 +290,9 @@
   }
   .features-img button {
     margin: 10px 0 0;
+  }
+  .some-facts {
+    padding: 0 20px;
   }
 }
 
@@ -221,7 +308,7 @@
     text-align: center;
   }
   .explore {
-    flex-direction: column;
+    flex-direction: column-reverse;
     padding: 0 25px;
   }
   .features {
@@ -233,5 +320,8 @@
   }
   .features-img button {
     margin: 10px 0 0;
+  }
+  .some-facts {
+    padding: 0 20px;
   }
 }
