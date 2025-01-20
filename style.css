@@ -230,7 +230,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* flex-wrap: wrap; */
 }
 .some-facts-card h6 {
   font-size: 4.5rem;
@@ -275,6 +274,18 @@
 .company img {
   width: 166px;
   filter: grayscale(100%);
+}
+
+/* style footer */
+footer {
+  margin: 0 auto;
+  background-color: rgba(255, 244, 231, 1);
+  padding: 38px;
+}
+footer p {
+  text-align: center;
+  font-size: 2rem;
+  color: rgba(66, 66, 66, 1);
 }
 
 /* Media style */
